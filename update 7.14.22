@@ -1,0 +1,1393 @@
+[
+    {
+        "id": "a716c94e.232018",
+        "type": "tab",
+        "label": "trey button tests",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5cfe0b14ec301245",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "84ab5ccb.50a8",
+        "type": "ui_tab",
+        "name": "Flow 1 pump control",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e7fe5685.c08688",
+        "type": "ui_group",
+        "name": "Relay Control",
+        "tab": "84ab5ccb.50a8",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ea442068.c7f07",
+        "type": "ui_group",
+        "name": "Pump Speed",
+        "tab": "84ab5ccb.50a8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8aff8e2e.62f06",
+        "type": "ui_group",
+        "name": "Temp Sensor 2",
+        "tab": "84ab5ccb.50a8",
+        "order": 2,
+        "disp": true,
+        "width": 5,
+        "collapse": false
+    },
+    {
+        "id": "a1192866.05a488",
+        "type": "ui_group",
+        "name": "Selector",
+        "tab": "84ab5ccb.50a8",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "ec01507241f07dcf",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "391023f5.1244dc",
+        "type": "profile",
+        "name": "spa heater",
+        "time1": "00:00",
+        "temp1": "34",
+        "time2": "23:59",
+        "temp2": "34",
+        "time3": "",
+        "temp3": "",
+        "time4": "",
+        "temp4": "",
+        "time5": "",
+        "temp5": "",
+        "time6": "",
+        "temp6": "",
+        "time7": "",
+        "temp7": "",
+        "time8": "",
+        "temp8": "",
+        "time9": "",
+        "temp9": "",
+        "time10": "",
+        "temp10": ""
+    },
+    {
+        "id": "558ae15b.7c3e9",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "26",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1080,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "63793142.5f27b",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "20",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1080,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "dee42abf.36d828",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "12",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1080,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2905ccb3.fb3164",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "6",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1220,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "aee383c8.7b787",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "13",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1180,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "422cb6c.a305a48",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1140,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "d7be26f2.1b60b8",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "d": true,
+        "name": "",
+        "pin": "12",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "e9e91f50.c87fb",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "18",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "700475bb.45877c",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "16",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ef328b91.dfc388",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "d": true,
+        "name": "",
+        "pin": "20",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 1140,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "317a50e.23b6fb",
+        "type": "rpi-gpio out",
+        "z": "a716c94e.232018",
+        "name": "",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "2a1b2584.d950fa",
+        "type": "switch",
+        "z": "a716c94e.232018",
+        "name": "OffPoolSpaSwitcher",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Pool Normal",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Spa Only",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Pool Only",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "1e8e4462.191b9c",
+                "70a61304.90d95c",
+                "1b0af268.ffbcae"
+            ],
+            [
+                "4a38df22.1ea1c",
+                "aeb97928.bcd718",
+                "d2a4397a.4a60f8"
+            ],
+            [
+                "2002eca1.03a804",
+                "4fa860a0.963d4",
+                "1e8e4462.191b9c"
+            ]
+        ]
+    },
+    {
+        "id": "4a38df22.1ea1c",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"0\"",
+        "op1": "0",
+        "op2": "",
+        "op1type": "num",
+        "op2type": "nul",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "a6c8e015.6e33d",
+                "d224b772.b51ac8",
+                "e19b58d5.8b0218",
+                "7289afb7ab370128"
+            ]
+        ]
+    },
+    {
+        "id": "1b0af268.ffbcae",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"1\"",
+        "op1": "1",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "a6c8e015.6e33d",
+                "28318ab0.7bcf36",
+                "d224b772.b51ac8",
+                "e19b58d5.8b0218",
+                "7289afb7ab370128"
+            ]
+        ]
+    },
+    {
+        "id": "1e8e4462.191b9c",
+        "type": "change",
+        "z": "a716c94e.232018",
+        "name": "spa \"off\"",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "34",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 740,
+        "wires": [
+            [
+                "48bfa57e.95e0ac"
+            ]
+        ]
+    },
+    {
+        "id": "aaf3cc03.6d8dc",
+        "type": "debug",
+        "z": "a716c94e.232018",
+        "name": "heater on=\"0\"",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1060,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2226f12f.407e9e",
+        "type": "function",
+        "z": "a716c94e.232018",
+        "name": "change topic",
+        "func": "msg.topic = \"setcurrent\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 1180,
+        "wires": [
+            [
+                "43b1679c.47c508",
+                "d189b1c4.16294"
+            ]
+        ]
+    },
+    {
+        "id": "43b1679c.47c508",
+        "type": "debug",
+        "z": "a716c94e.232018",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 990,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "aeb97928.bcd718",
+        "type": "change",
+        "z": "a716c94e.232018",
+        "name": "spa \"On\"",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "92",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 700,
+        "wires": [
+            [
+                "48bfa57e.95e0ac"
+            ]
+        ]
+    },
+    {
+        "id": "9e38f277.74dba",
+        "type": "change",
+        "z": "a716c94e.232018",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 980,
+        "wires": [
+            [
+                "aaf3cc03.6d8dc",
+                "7ce48ba31435ecbf"
+            ]
+        ]
+    },
+    {
+        "id": "4fa860a0.963d4",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"0\"",
+        "op1": "0",
+        "op2": "",
+        "op1type": "num",
+        "op2type": "nul",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "28318ab0.7bcf36"
+            ]
+        ]
+    },
+    {
+        "id": "2002eca1.03a804",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"1\"",
+        "op1": "1",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "e19b58d5.8b0218",
+                "d224b772.b51ac8",
+                "a6c8e015.6e33d",
+                "db2bbd56.eeeec",
+                "7289afb7ab370128"
+            ]
+        ]
+    },
+    {
+        "id": "d2a4397a.4a60f8",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"1\"",
+        "op1": "1",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 340,
+        "y": 360,
+        "wires": [
+            [
+                "28318ab0.7bcf36",
+                "db2bbd56.eeeec"
+            ]
+        ]
+    },
+    {
+        "id": "70a61304.90d95c",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "trigger \"0\"",
+        "op1": "0",
+        "op2": "",
+        "op1type": "num",
+        "op2type": "nul",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "db2bbd56.eeeec",
+                "f766cfde.e3bf8",
+                "171ae419.b2d28c"
+            ]
+        ]
+    },
+    {
+        "id": "f766cfde.e3bf8",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "num",
+        "duration": "65",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 810,
+        "y": 500,
+        "wires": [
+            [
+                "ae69e91d.0c4328"
+            ]
+        ]
+    },
+    {
+        "id": "ae69e91d.0c4328",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "11.5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 970,
+        "y": 520,
+        "wires": [
+            [
+                "422cb6c.a305a48"
+            ]
+        ]
+    },
+    {
+        "id": "c122ed5e.48ea",
+        "type": "debug",
+        "z": "a716c94e.232018",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1070,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "cb90f0f3.13a0b",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "30",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 890,
+        "y": 420,
+        "wires": [
+            [
+                "c122ed5e.48ea",
+                "aee383c8.7b787"
+            ]
+        ]
+    },
+    {
+        "id": "171ae419.b2d28c",
+        "type": "trigger",
+        "z": "a716c94e.232018",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "num",
+        "duration": "5",
+        "extend": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "outputs": 1,
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "cb90f0f3.13a0b"
+            ]
+        ]
+    },
+    {
+        "id": "efa1d33c.a436",
+        "type": "ui_gauge",
+        "z": "a716c94e.232018",
+        "d": true,
+        "name": "",
+        "group": "8aff8e2e.62f06",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Air Temp",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "110",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "80",
+        "seg2": "100",
+        "className": "",
+        "x": 850,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "627dcf43.a654a",
+        "type": "ui_gauge",
+        "z": "a716c94e.232018",
+        "name": "",
+        "group": "8aff8e2e.62f06",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Water Temp",
+        "label": "Fahrenheit",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "105",
+        "colors": [
+            "#000cb3",
+            "#00e645",
+            "#ca3838"
+        ],
+        "seg1": "90",
+        "seg2": "102",
+        "className": "",
+        "x": 930,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f2a45fb7.fb866",
+        "type": "ui_dropdown",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Select One:",
+        "tooltip": "",
+        "place": "",
+        "group": "a1192866.05a488",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "Pool Normal",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Spa Only",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "Pool Only",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "topicType": "str",
+        "className": "",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "2a1b2584.d950fa"
+            ]
+        ]
+    },
+    {
+        "id": "a6c8e015.6e33d",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Intake Water",
+        "tooltip": "ON= spa  OFF=Pool",
+        "group": "e7fe5685.c08688",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 650,
+        "y": 380,
+        "wires": [
+            [
+                "2905ccb3.fb3164"
+            ]
+        ]
+    },
+    {
+        "id": "28318ab0.7bcf36",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Water Out--Pool",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "aee383c8.7b787"
+            ]
+        ]
+    },
+    {
+        "id": "d224b772.b51ac8",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Water Out--Spa",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 640,
+        "y": 540,
+        "wires": [
+            [
+                "422cb6c.a305a48"
+            ]
+        ]
+    },
+    {
+        "id": "db2bbd56.eeeec",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Water Out--Both",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 640,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e19b58d5.8b0218",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Heater Enabled",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 580,
+        "y": 660,
+        "wires": [
+            [
+                "e9e91f50.c87fb"
+            ]
+        ]
+    },
+    {
+        "id": "48bfa57e.95e0ac",
+        "type": "ui_numeric",
+        "z": "a716c94e.232018",
+        "name": "SpaSetpoint",
+        "label": "Spa Setting",
+        "tooltip": "",
+        "group": "8aff8e2e.62f06",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "settarget",
+        "topicType": "str",
+        "format": "{{number}}",
+        "min": "60",
+        "max": "101",
+        "step": 1,
+        "className": "",
+        "x": 410,
+        "y": 940,
+        "wires": [
+            [
+                "d189b1c4.16294"
+            ]
+        ]
+    },
+    {
+        "id": "d189b1c4.16294",
+        "type": "ramp-thermostat",
+        "z": "a716c94e.232018",
+        "name": "Spa Heater",
+        "profile": "391023f5.1244dc",
+        "hysteresisplus": 0,
+        "hysteresisminus": "0",
+        "x": 650,
+        "y": 1060,
+        "wires": [
+            [
+                "9e38f277.74dba"
+            ],
+            [
+                "627dcf43.a654a"
+            ],
+            [
+                "48bfa57e.95e0ac"
+            ]
+        ]
+    },
+    {
+        "id": "d21fda37.d892f8",
+        "type": "ds18b20",
+        "z": "a716c94e.232018",
+        "d": true,
+        "name": "air temp",
+        "sensorid": "28-01191436c76e",
+        "timer": ".1",
+        "x": 460,
+        "y": 1280,
+        "wires": [
+            [
+                "47eae690.ccc128"
+            ]
+        ]
+    },
+    {
+        "id": "b75c8062.2ee22",
+        "type": "ds18b20",
+        "z": "a716c94e.232018",
+        "name": "water temp",
+        "sensorid": "28-01191436c76e",
+        "timer": ".1",
+        "x": 420,
+        "y": 1160,
+        "wires": [
+            [
+                "feefea02.9356a8"
+            ]
+        ]
+    },
+    {
+        "id": "47eae690.ccc128",
+        "type": "unit-converter",
+        "z": "a716c94e.232018",
+        "category": "temperature",
+        "inputUnit": "C",
+        "outputUnit": "F",
+        "inputField": "payload",
+        "outputField": "payload",
+        "inputFieldType": "msg",
+        "outputFieldType": "msg",
+        "name": "",
+        "x": 660,
+        "y": 1300,
+        "wires": [
+            [
+                "efa1d33c.a436"
+            ]
+        ]
+    },
+    {
+        "id": "feefea02.9356a8",
+        "type": "unit-converter",
+        "z": "a716c94e.232018",
+        "category": "temperature",
+        "inputUnit": "C",
+        "outputUnit": "F",
+        "inputField": "payload",
+        "outputField": "payload",
+        "inputFieldType": "msg",
+        "outputFieldType": "msg",
+        "roundOutputField": true,
+        "outputFieldDecimals": "1",
+        "name": "currenttemp",
+        "x": 570,
+        "y": 1180,
+        "wires": [
+            [
+                "2226f12f.407e9e"
+            ]
+        ]
+    },
+    {
+        "id": "654bc6dd6aac304d",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Pool heater 90 degree",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 640,
+        "y": 720,
+        "wires": [
+            [
+                "700475bb.45877c"
+            ]
+        ]
+    },
+    {
+        "id": "7ce48ba31435ecbf",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Spa heater",
+        "tooltip": "",
+        "group": "e7fe5685.c08688",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 650,
+        "y": 760,
+        "wires": [
+            [
+                "317a50e.23b6fb"
+            ]
+        ]
+    },
+    {
+        "id": "0bcce04a3c6a50f2",
+        "type": "inject",
+        "z": "a716c94e.232018",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Pool Normal",
+        "payloadType": "str",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "f2a45fb7.fb866"
+            ]
+        ]
+    },
+    {
+        "id": "2c53b80e909252c1",
+        "type": "debug",
+        "z": "a716c94e.232018",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "b4bfbd6a250006c7",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Low",
+        "tooltip": "",
+        "group": "ea442068.c7f07",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "dee42abf.36d828"
+            ]
+        ]
+    },
+    {
+        "id": "dc98379d8f9a8523",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "Medium",
+        "tooltip": "",
+        "group": "ea442068.c7f07",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "558ae15b.7c3e9"
+            ]
+        ]
+    },
+    {
+        "id": "7289afb7ab370128",
+        "type": "ui_switch",
+        "z": "a716c94e.232018",
+        "name": "",
+        "label": "High",
+        "tooltip": "",
+        "group": "ea442068.c7f07",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "1",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "63793142.5f27b"
+            ]
+        ]
+    }
+]
